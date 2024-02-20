@@ -1,38 +1,12 @@
-  <template>
+<template>
   <main class="h-screen w-full bg-slate-800">
     <div class="flex flex-col justify-center h-screen items-center">
-      <h1 class="text-4xl font-bold text-white text-animation">
-        Vite Vue Tailwindcss Starter
-      </h1>
-      <button
-        class="
-          bg-white
-          px-5
-          py-2
-          rounded-md
-          my-5
-          hover:bg-slate-400
-          transition-all
-          ease-in-out
-          duration-300
-          font-semibold
-        "
-        @click="cloneIt"
-      >
-        Starter VVT
-      </button>
-      {{ mouseX }}, {{ mouseY }}
+      <router-view></router-view>
     </div>
   </main>
 </template>
 <script>
-export default {
-  methods: {
-    cloneIt() {
-      window.open("https://github.com/naneps/vvt-starter/");
-    },
-  },
-};
+export default {};
 </script>
 <style>
 .text-animation {
@@ -68,4 +42,4 @@ export default {
   }
 }
 /* make tail animation */
-</style> 
+</style>
